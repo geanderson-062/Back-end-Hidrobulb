@@ -88,16 +88,18 @@ def get_saturation_drainage():
 
 
 @app.get("/all_parameters/")
-def get_all_parameters_except_initial():
+def get_all_parameters():
     soil_properties = get_soil_properties()
+    initial_conditions = get_initial_conditions()
     boundary_conditions = get_boundary_conditions()
     climate_parameters = get_climate_parameters()
     domain_geometry = get_domain_geometry()
     saturation_drainage = get_saturation_drainage()
     time_interval = get_time_interval()
 
-    all_parameters_except_initial = {
+    all_parameters = {
         "soil_properties": soil_properties,
+        "initial_conditions": initial_conditions,
         "boundary_conditions": boundary_conditions,
         "climate_parameters": climate_parameters,
         "domain_geometry": domain_geometry,
@@ -105,4 +107,4 @@ def get_all_parameters_except_initial():
         "time_interval": time_interval,
     }
 
-    return all_parameters_except_initial
+    return all_parameters
