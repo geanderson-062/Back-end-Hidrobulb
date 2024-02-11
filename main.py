@@ -2,7 +2,10 @@ from fastapi import FastAPI, HTTPException
 from fastapi.responses import RedirectResponse
 from endpoints.router import router
 
-app = FastAPI()
+app = FastAPI(
+    title="API de Comportamento do Solo",
+    description="A API fornece endpoints para acessar diferentes aspectos do comportamento do solo, incluindo suas propriedades, condições iniciais, condições de contorno, parâmetros climáticos, geometria do domínio, intervalo de tempo e condições de saturação e drenagem.",
+)
 
 app.include_router(router)
 
