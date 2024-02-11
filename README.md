@@ -44,7 +44,7 @@ Após iniciar o servidor, você pode acessar a documentação interativa da API 
 - `/domain_geometry/`: Retorna dados simulados da geometria do domínio, como espessura e área da camada superficial do solo.
 - `/time_interval/`: Retorna dados simulados do intervalo de tempo para a simulação.
 - `/saturation_drainage/`: Retorna dados simulados das condições de saturação e drenagem do solo.
-- `/all_parameters_except_initial/`: Retorna todos os dados, exceto as condições iniciais.
+- `/all_parameters/`: Retorna todos os dados.
 
 ## Contribuindo
 
