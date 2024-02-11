@@ -1,4 +1,4 @@
-# API de Simulação do Comportamento do Solo com HYDRUS 3D
+# API de Simulação do Comportamento do Solo
 
 Esta é uma API construída com FastAPI que fornece dados simulados para diferentes aspectos do comportamento do solo, como propriedades do solo, condições climáticas, geometria do domínio e muito mais. Os dados fornecidos são gerados aleatoriamente para ilustrar conceitos e podem ser usados para testes, prototipagem ou propósitos educacionais.
 
