@@ -1,6 +1,6 @@
 from fastapi import FastAPI, HTTPException
 from fastapi.responses import RedirectResponse
-from endpoints.router import router
+from routers.router import router
 
 app = FastAPI(
     title="API de Comportamento do Solo",
