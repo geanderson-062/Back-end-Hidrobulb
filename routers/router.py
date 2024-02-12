@@ -1,5 +1,5 @@
 from fastapi import APIRouter
-from . import (
+from endpoints import (
     soil_properties,
     initial_conditions,
     boundary_conditions,
