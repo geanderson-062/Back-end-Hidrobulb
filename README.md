@@ -2,6 +2,10 @@
 
 Esta é uma API de simulação do comportamento do solo, desenvolvida usando o framework FastAPI em Python.
 
+## Api
+
+A API está disponível em [https://api-simulacao-do-bulbo-em-camada-superficial-kswxdthb5.vercel.app/docs](https://api-simulacao-do-bulbo-em-camada-superficial-kswxdthb5.vercel.app/docs). Lá, você encontrará uma descrição de todos os endpoints, seus parâmetros e exemplos de uso.
+
 ## Descrição
 
 A API fornece endpoints para acessar diferentes aspectos do comportamento do solo, incluindo suas propriedades, condições iniciais, condições de contorno, parâmetros climáticos, geometria do domínio, intervalo de tempo e condições de saturação e drenagem.

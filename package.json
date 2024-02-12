@@ -1,0 +1,15 @@
+{
+  "name": "api-de-comportamento-do-solo",
+  "version": "1.0.0",
+  "description": "API de simulação do comportamento do solo",
+  "main": "main.py",
+  "scripts": {
+    "Iniciar": "uvicorn main:app --reload",
+    "Instalar": "pip install fastapi uvicorn",
+    "Dependencias": "pip install -r requirements.txt",
+    "Build": "vercel"
+  },
+  "dependencies": {
+    "fastify": "^3.17.0"
+  }
+}

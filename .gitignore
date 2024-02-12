@@ -24,3 +24,4 @@ __pycache__/
 
 # Arquivos de ambiente
 .env
+.vercel
