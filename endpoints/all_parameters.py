@@ -8,8 +8,8 @@ router = APIRouter()
 @router.get(
     "/all_parameters/",
     response_model=AllParameters,
-    tags=["All parameters"],
-    summary="Get All parameters",
+    tags=["All Parameters"],
+    summary="Get All Parameters",
 )
 def get_all_parameters():
     return generate_all_parameters()

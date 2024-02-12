@@ -8,8 +8,8 @@ router = APIRouter()
 @router.get(
     "/climate_parameters/",
     response_model=ClimateParameters,
-    tags=["Climate parameters"],
-    summary="Get Climate parameters",
+    tags=["Climate Parameters"],
+    summary="Get Climate Parameters",
 )
 def get_climate_parameters():
     return generate_climate_parameters()
