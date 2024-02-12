@@ -1,4 +1,5 @@
 from fastapi import APIRouter
+from models.all_parameters import AllParameters
 from . import (
     soil_properties,
     initial_conditions,
@@ -12,7 +13,7 @@ from . import (
 router = APIRouter()
 
 
-@router.get("/all_parameters/")
+@router.get("/all_parameters/", response_model=AllParameters)
 def get_all_parameters():
     soil_props = soil_properties.get_soil_properties()
     initial_conds = initial_conditions.get_initial_conditions()

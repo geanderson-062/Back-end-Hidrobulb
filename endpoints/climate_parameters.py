@@ -1,10 +1,11 @@
 from fastapi import APIRouter
+from models.climate_parameters import ClimateParameters
 import random
 
 router = APIRouter()
 
 
-@router.get("/climate_parameters/")
+@router.get("/climate_parameters/", response_model=ClimateParameters)
 def get_climate_parameters():
     temperature = round(random.uniform(10, 30), 2)
     humidity = round(random.uniform(30, 80), 2)
