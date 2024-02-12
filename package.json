@@ -7,7 +7,8 @@
     "Iniciar": "uvicorn main:app --reload",
     "Instalar": "pip install fastapi uvicorn",
     "Dependencias": "pip install -r requirements.txt",
-    "Build": "vercel"
+    "Build": "vercel",
+    "Implantar": "vercel --prod"
   },
   "dependencies": {
     "fastify": "^3.17.0"
