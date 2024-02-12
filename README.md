@@ -81,6 +81,16 @@ Os sete tópicos são importantes para a simulação da camada superficial do bu
 
 7. **Condições de Saturação e Drenagem:** Descrever como a água é movimentada no solo, incluindo o estado de saturação do solo e o tipo de drenagem, é fundamental para entender a disponibilidade de água para as plantas e outros processos relacionados ao transporte de água no solo. Essas condições afetam diretamente a distribuição e a disponibilidade de água no ambiente do solo.
 
+## Metodologia de Geração de Dados da Simulação
+
+A API utiliza uma metodologia baseada na distribuição normal (Gaussiana) para gerar os parâmetros climáticos necessários para a simulação da camada superficial do bulbo úmido. Isso significa que os valores dos parâmetros climáticos, como temperatura, umidade relativa, velocidade do vento e radiação solar, são gerados de acordo com as características típicas da região em estudo (norte, nordeste, centro oeste, sudeste, sul).
+
+A distribuição normal é uma distribuição estatística que é frequentemente utilizada para modelar fenômenos naturais. Ela é caracterizada por uma curva de sino, onde a maioria dos valores se concentra em torno de um valor médio (média) e se espalha simetricamente em ambas as direções em torno dessa média, de acordo com o desvio padrão.
+
+Ao aplicar essa metodologia, a API pode simular variações realistas nos parâmetros climáticos ao longo do tempo e do espaço. Isso permite que as simulações sejam mais precisas e representativas das condições reais do ambiente em estudo.
+
+A utilização da distribuição normal na geração de dados climáticos é uma abordagem comum e eficaz em modelagem hidrológica e meteorológica, garantindo resultados que são consistentes com as características climáticas observadas na região específica da simulação.
+
 ## Uso da API
 
 Esta API foi projetada para simplificar o processo de configuração e execução de simulações da camada superficial do bulbo úmido no solo. Aqui está um resumo do fluxo de uso:
