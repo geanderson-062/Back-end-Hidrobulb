@@ -5,6 +5,11 @@ from models.boundary_conditions import BoundaryConditions
 router = APIRouter()
 
 
-@router.get("/boundary_conditions/", response_model=BoundaryConditions)
+@router.get(
+    "/boundary_conditions/",
+    response_model=BoundaryConditions,
+    tags=["Boundary Conditions"],
+    summary="Get Boundary Conditions",
+)
 def get_boundary_conditions():
     return generate_boundary_conditions()
