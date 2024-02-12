@@ -15,7 +15,7 @@ router = APIRouter()
     "/boundary_conditions/norte",
     response_model=BoundaryConditions,
     tags=["Boundary Conditions"],
-    summary="Get Boundary Conditions",
+    summary="Get Boundary Conditions Norte",
 )
 def get_boundary_conditions():
     return generate_boundary_conditions_norte()
@@ -25,7 +25,7 @@ def get_boundary_conditions():
     "/boundary_conditions/nordeste",
     response_model=BoundaryConditions,
     tags=["Boundary Conditions"],
-    summary="Get Boundary Conditions",
+    summary="Get Boundary Conditions Nordeste",
 )
 def get_boundary_conditions():
     return generate_boundary_conditions_nordeste()
@@ -35,7 +35,7 @@ def get_boundary_conditions():
     "/boundary_conditions/centro_oeste",
     response_model=BoundaryConditions,
     tags=["Boundary Conditions"],
-    summary="Get Boundary Conditions",
+    summary="Get Boundary Conditions Centro Oeste",
 )
 def get_boundary_conditions():
     return generate_boundary_conditions_centro_oeste()
@@ -45,7 +45,7 @@ def get_boundary_conditions():
     "/boundary_conditions/sudeste",
     response_model=BoundaryConditions,
     tags=["Boundary Conditions"],
-    summary="Get Boundary Conditions",
+    summary="Get Boundary Conditions Sudeste",
 )
 def get_boundary_conditions():
     return generate_boundary_conditions_sudeste()
@@ -55,7 +55,7 @@ def get_boundary_conditions():
     "/boundary_conditions/sul",
     response_model=BoundaryConditions,
     tags=["Boundary Conditions"],
-    summary="Get Boundary Conditions",
+    summary="Get Boundary Conditions Sul",
 )
 def get_boundary_conditions():
     return generate_boundary_conditions_sul()

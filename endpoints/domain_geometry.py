@@ -15,14 +15,14 @@ router = APIRouter()
     "/domain_geometry/norte",
     response_model=DomainGeometry,
     tags=["Domain Geometry"],
-    summary="Get Domain Geometry",
+    summary="Get Domain Geometry Norte",
 )
 def get_domain_geometry():
     return generate_domain_geometry_norte()
 
 
 @router.get(
-    "/domain_geometry/nordeste",
+    "/domain_geometry/nordeste Nordeste",
     response_model=DomainGeometry,
     tags=["Domain Geometry"],
     summary="Get Domain Geometry",
@@ -35,7 +35,7 @@ def get_domain_geometry():
     "/domain_geometry/centro_oeste",
     response_model=DomainGeometry,
     tags=["Domain Geometry"],
-    summary="Get Domain Geometry",
+    summary="Get Domain Geometry Centro Oeste",
 )
 def get_domain_geometry():
     return generate_domain_geometry_centro_oeste()
@@ -45,7 +45,7 @@ def get_domain_geometry():
     "/domain_geometry/sudeste",
     response_model=DomainGeometry,
     tags=["Domain Geometry"],
-    summary="Get Domain Geometry",
+    summary="Get Domain Geometry Sudeste",
 )
 def get_domain_geometry():
     return generate_domain_geometry_sudeste()
@@ -55,7 +55,7 @@ def get_domain_geometry():
     "/domain_geometry/sul",
     response_model=DomainGeometry,
     tags=["Domain Geometry"],
-    summary="Get Domain Geometry",
+    summary="Get Domain Geometry Sul",
 )
 def get_domain_geometry():
     return generate_domain_geometry_sul()

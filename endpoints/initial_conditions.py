@@ -15,7 +15,7 @@ router = APIRouter()
     "/initial_conditions/norte",
     response_model=InitialConditions,
     tags=["Initial Conditions"],
-    summary="Get Initial Conditions",
+    summary="Get Initial Conditions Norte",
 )
 def get_initial_conditions():
     return generate_initial_conditions_norte()
@@ -25,7 +25,7 @@ def get_initial_conditions():
     "/initial_conditions/nordeste",
     response_model=InitialConditions,
     tags=["Initial Conditions"],
-    summary="Get Initial Conditions",
+    summary="Get Initial Conditions Nordeste",
 )
 def get_initial_conditions():
     return generate_initial_conditions_nordeste()
@@ -35,7 +35,7 @@ def get_initial_conditions():
     "/initial_conditions/centro_oeste",
     response_model=InitialConditions,
     tags=["Initial Conditions"],
-    summary="Get Initial Conditions",
+    summary="Get Initial Conditions Centro Oeste",
 )
 def get_initial_conditions():
     return generate_initial_conditions_centro_oeste()
@@ -45,7 +45,7 @@ def get_initial_conditions():
     "/initial_conditions/sudeste",
     response_model=InitialConditions,
     tags=["Initial Conditions"],
-    summary="Get Initial Conditions",
+    summary="Get Initial Conditions Sudeste",
 )
 def get_initial_conditions():
     return generate_initial_conditions_sudeste()
@@ -55,7 +55,7 @@ def get_initial_conditions():
     "/initial_conditions/sul",
     response_model=InitialConditions,
     tags=["Initial Conditions"],
-    summary="Get Initial Conditions",
+    summary="Get Initial Conditions Sul",
 )
 def get_initial_conditions():
     return generate_initial_conditions_sul()

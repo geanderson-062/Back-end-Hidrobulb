@@ -16,7 +16,7 @@ router = APIRouter()
     "/soil_properties/norte",
     response_model=SoilProperties,
     tags=["Soil Properties"],
-    summary="Get Soil Properties",
+    summary="Get Soil Properties Norte",
 )
 def get_soil_properties():
     return generate_soil_properties_norte()
@@ -26,7 +26,7 @@ def get_soil_properties():
     "/soil_properties/nordeste",
     response_model=SoilProperties,
     tags=["Soil Properties"],
-    summary="Get Soil Properties",
+    summary="Get Soil Properties Nordeste",
 )
 def get_soil_properties():
     return generate_soil_properties_nordeste()
@@ -36,7 +36,7 @@ def get_soil_properties():
     "/soil_properties/centro_oeste",
     response_model=SoilProperties,
     tags=["Soil Properties"],
-    summary="Get Soil Properties",
+    summary="Get Soil Properties Centro Oeste",
 )
 def get_soil_properties():
     return generate_soil_properties_centro_oeste()
@@ -46,7 +46,7 @@ def get_soil_properties():
     "/soil_properties/sudeste",
     response_model=SoilProperties,
     tags=["Soil Properties"],
-    summary="Get Soil Properties",
+    summary="Get Soil Properties Sudeste",
 )
 def get_soil_properties():
     return generate_soil_properties_sudeste()
@@ -56,7 +56,7 @@ def get_soil_properties():
     "/soil_properties/sul",
     response_model=SoilProperties,
     tags=["Soil Properties"],
-    summary="Get Soil Properties",
+    summary="Get Soil Properties Sul",
 )
 def get_soil_properties():
     return generate_soil_properties_sul()

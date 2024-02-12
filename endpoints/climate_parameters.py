@@ -15,7 +15,7 @@ router = APIRouter()
     "/climate_parameters/norte",
     response_model=ClimateParameters,
     tags=["Climate Parameters"],
-    summary="Get Climate Parameters",
+    summary="Get Climate Parameters Norte",
 )
 def get_climate_parameters():
     return generate_climate_parameters_norte()
@@ -25,7 +25,7 @@ def get_climate_parameters():
     "/climate_parameters/nordeste",
     response_model=ClimateParameters,
     tags=["Climate Parameters"],
-    summary="Get Climate Parameters",
+    summary="Get Climate Parameters Nordeste",
 )
 def get_climate_parameters():
     return generate_climate_parameters_nordeste()
@@ -35,7 +35,7 @@ def get_climate_parameters():
     "/climate_parameters/centro_oeste",
     response_model=ClimateParameters,
     tags=["Climate Parameters"],
-    summary="Get Climate Parameters",
+    summary="Get Climate Parameters Centro Oeste",
 )
 def get_climate_parameters():
     return generate_climate_parameters_centro_oeste()
@@ -45,7 +45,7 @@ def get_climate_parameters():
     "/climate_parameters/sudeste",
     response_model=ClimateParameters,
     tags=["Climate Parameters"],
-    summary="Get Climate Parameters",
+    summary="Get Climate Parameters Sudeste",
 )
 def get_climate_parameters():
     return generate_climate_parameters_sudeste()
@@ -55,7 +55,7 @@ def get_climate_parameters():
     "/climate_parameters/sul",
     response_model=ClimateParameters,
     tags=["Climate Parameters"],
-    summary="Get Climate Parameters",
+    summary="Get Climate Parameters Sul",
 )
 def get_climate_parameters():
     return generate_climate_parameters_sul()

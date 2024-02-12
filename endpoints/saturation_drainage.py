@@ -15,7 +15,7 @@ router = APIRouter()
     "/saturation_drainage/norte",
     response_model=SaturationDrainage,
     tags=["Saturation Drainage"],
-    summary="Get Saturation Drainage",
+    summary="Get Saturation Drainage Norte",
 )
 def get_saturation_drainage():
     return generate_saturation_drainage_norte()
@@ -25,7 +25,7 @@ def get_saturation_drainage():
     "/saturation_drainage/nordeste",
     response_model=SaturationDrainage,
     tags=["Saturation Drainage"],
-    summary="Get Saturation Drainage",
+    summary="Get Saturation Drainage Nordeste",
 )
 def get_saturation_drainage():
     return generate_saturation_drainage_nordeste()
@@ -35,7 +35,7 @@ def get_saturation_drainage():
     "/saturation_drainage/centro_oeste",
     response_model=SaturationDrainage,
     tags=["Saturation Drainage"],
-    summary="Get Saturation Drainage",
+    summary="Get Saturation Drainage Centro Oeste",
 )
 def get_saturation_drainage():
     return generate_saturation_drainage_centro_oeste()
@@ -45,7 +45,7 @@ def get_saturation_drainage():
     "/saturation_drainage/sudeste",
     response_model=SaturationDrainage,
     tags=["Saturation Drainage"],
-    summary="Get Saturation Drainage",
+    summary="Get Saturation Drainage Sudeste",
 )
 def get_saturation_drainage():
     return generate_saturation_drainage_sudeste()
@@ -55,7 +55,7 @@ def get_saturation_drainage():
     "/saturation_drainage/sul",
     response_model=SaturationDrainage,
     tags=["Saturation Drainage"],
-    summary="Get Saturation Drainage",
+    summary="Get Saturation Drainage Sul",
 )
 def get_saturation_drainage():
     return generate_saturation_drainage_sul()
