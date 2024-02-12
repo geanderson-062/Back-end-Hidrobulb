@@ -1,10 +1,19 @@
 from fastapi import APIRouter
+from pydantic import BaseModel
 import random
 
 router = APIRouter()
 
 
-@router.get("/soil_properties/")
+class SoilProperties(BaseModel):
+    soil_texture: str
+    hydraulic_conductivity: float
+    porosity: float
+    field_capacity: float
+    wilting_point: float
+
+
+@router.get("/soil_properties/", response_model=SoilProperties)
 def get_soil_properties():
     soil_texture = random.choice(["Argiloso", "Arenoso", "Silte", "Franco"])
     hydraulic_conductivity = round(random.uniform(0.01, 10), 2)

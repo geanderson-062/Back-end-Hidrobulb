@@ -1,4 +1,5 @@
 from fastapi import APIRouter
+from pydantic import BaseModel
 from . import (
     soil_properties,
     initial_conditions,
@@ -12,7 +13,29 @@ from . import (
 router = APIRouter()
 
 
-@router.get("/all_parameters/")
+class AllParameters(BaseModel):
+    soil_texture: str
+    hydraulic_conductivity: float
+    porosity: float
+    field_capacity: float
+    wilting_point: float
+    initial_moisture: float
+    solute_concentration: float
+    surface_water_flow: float
+    evaporation_rate: float
+    precipitation: float
+    temperature: float
+    humidity: float
+    wind_speed: float
+    radiation: float
+    soil_thickness: float
+    surface_area: float
+    time_interval: str
+    saturation: str
+    drainage: str
+
+
+@router.get("/all_parameters/", response_model=AllParameters)
 def get_all_parameters():
     soil_props = soil_properties.get_soil_properties()
     initial_conds = initial_conditions.get_initial_conditions()
