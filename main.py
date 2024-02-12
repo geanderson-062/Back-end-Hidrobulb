@@ -3,8 +3,8 @@ from fastapi.responses import RedirectResponse
 from routers.router import router
 
 app = FastAPI(
-    title="API de Comportamento do Solo",
-    description="A API fornece endpoints para acessar diferentes aspectos do comportamento do solo, incluindo suas propriedades, condições iniciais, condições de contorno, parâmetros climáticos, geometria do domínio, intervalo de tempo e condições de saturação e drenagem.",
+    title="API de simulação do Bulbo em camada superficial",
+    description="Esta api fornece informações sobre os dados necessários para configurar uma simulação da camada superficial do bulbo úmido no software HYDRUS 3D. Ele descreve as propriedades do solo, as condições iniciais, as condições de contorno, os parâmetros climáticos, a geometria do domínio, o intervalo de tempo e as condições de saturação e drenagem.",
 )
 
 app.include_router(router)
