@@ -1,12 +1,8 @@
 from fastapi import APIRouter
-from pydantic import BaseModel
+from models.time_interval import TimeInterval
 import random
 
 router = APIRouter()
-
-
-class TimeInterval(BaseModel):
-    time_interval: str
 
 
 @router.get("/time_interval/", response_model=TimeInterval)

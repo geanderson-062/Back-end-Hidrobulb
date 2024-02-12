@@ -1,15 +1,8 @@
 from fastapi import APIRouter
-from pydantic import BaseModel
+from models.climate_parameters import ClimateParameters
 import random
 
 router = APIRouter()
-
-
-class ClimateParameters(BaseModel):
-    temperature: float
-    humidity: float
-    wind_speed: float
-    radiation: float
 
 
 @router.get("/climate_parameters/", response_model=ClimateParameters)

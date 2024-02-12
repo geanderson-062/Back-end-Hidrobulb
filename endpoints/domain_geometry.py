@@ -1,13 +1,8 @@
 from fastapi import APIRouter
-from pydantic import BaseModel
+from models.domain_geometry import DomainGeometry
 import random
 
 router = APIRouter()
-
-
-class DomainGeometry(BaseModel):
-    soil_thickness: float
-    surface_area: float
 
 
 @router.get("/domain_geometry/", response_model=DomainGeometry)

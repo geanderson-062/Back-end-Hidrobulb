@@ -1,13 +1,8 @@
 from fastapi import APIRouter
-from pydantic import BaseModel
+from models.initial_conditions import InitialConditions
 import random
 
 router = APIRouter()
-
-
-class InitialConditions(BaseModel):
-    initial_moisture: float
-    solute_concentration: float
 
 
 @router.get("/initial_conditions/", response_model=InitialConditions)

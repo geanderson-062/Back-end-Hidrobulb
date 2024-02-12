@@ -1,14 +1,8 @@
 from fastapi import APIRouter
-from pydantic import BaseModel
+from models.boundary_conditions import BoundaryConditions
 import random
 
 router = APIRouter()
-
-
-class BoundaryConditions(BaseModel):
-    surface_water_flow: float
-    evaporation_rate: float
-    precipitation: float
 
 
 @router.get("/boundary_conditions/", response_model=BoundaryConditions)

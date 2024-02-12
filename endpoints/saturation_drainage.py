@@ -1,13 +1,8 @@
 from fastapi import APIRouter
-from pydantic import BaseModel
+from models.saturation_drainage import SaturationDrainage
 import random
 
 router = APIRouter()
-
-
-class SaturationDrainage(BaseModel):
-    saturation: str
-    drainage: str
 
 
 @router.get("/saturation_drainage/", response_model=SaturationDrainage)
