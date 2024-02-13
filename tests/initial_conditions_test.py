@@ -5,7 +5,7 @@ import requests
 class TestAPIIntegration(unittest.TestCase):
     base_url = "http://127.0.0.1:8000"
 
-    def test_initial_conditions_endpoint(self):
+    def test_initial_conditions_norte_endpoint(self):
         response = requests.get(f"{self.base_url}/initial_conditions/norte")
         self.assertEqual(response.status_code, 200)
 

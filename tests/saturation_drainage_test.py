@@ -5,7 +5,7 @@ import requests
 class TestAPIIntegration(unittest.TestCase):
     base_url = "http://127.0.0.1:8000"
 
-    def test_saturation_drainage_endpoint(self):
+    def test_saturation_drainage_norte_endpoint(self):
         response = requests.get(f"{self.base_url}/saturation_drainage/norte")
         self.assertEqual(response.status_code, 200)
 
