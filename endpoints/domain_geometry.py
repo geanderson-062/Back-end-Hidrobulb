@@ -22,7 +22,7 @@ def get_domain_geometry():
 
 
 @router.get(
-    "/domain_geometry/nordeste Nordeste",
+    "/domain_geometry/nordeste",
     response_model=DomainGeometry,
     tags=["Domain Geometry"],
     summary="Get Domain Geometry",
